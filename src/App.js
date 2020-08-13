@@ -1,24 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Button from "./components/Button";
+import Modal from "./components/Modal.jsx";
+import Card from "./components/Card.jsx";
+import PaySuccess from "./components/PaySuccess.jsx";
+import ModalHeader from "./components/ModalHeader";
+import ModalFooter from "./components/ModalFooter";
+import {footerImage} from "./assets"
+import "./App.css";
 
 function App() {
+
+  const [isShowModal, setIsShowModal] = useState(true);
+  const [isShowSuccess, setisShowSuccess] = useState(false);
+  const sum = 123284;
+
+  const pay = props => {
+    console.log(props)
+    setisShowSuccess(true);
+  }
+
+  const toMain = () => {
+    setIsShowModal(false);
+    setisShowSuccess(false);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button title="Оплатити" onClick={() => setIsShowModal(true)} />
+      <Modal isShowModal={isShowModal} onClick={() => setIsShowModal(false)}>
+        <ModalHeader sum={sum}/>
+        {
+          isShowSuccess ? ( 
+            <PaySuccess toMain={toMain}/>
+          ) : (
+            <>
+              <Card sum={sum} pay={pay} />
+              <img src={footerImage} alt="secure" height="70px" width="500px"/>
+            </>
+          )
+        } 
+        <ModalFooter/>
+      </Modal>
     </div>
   );
 }
