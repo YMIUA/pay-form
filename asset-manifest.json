@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/pay-form/static/css/main.3a4bbd11.chunk.css",
+    "main.js": "/pay-form/static/js/main.b266288b.chunk.js",
+    "main.js.map": "/pay-form/static/js/main.b266288b.chunk.js.map",
+    "runtime-main.js": "/pay-form/static/js/runtime-main.1cff6829.js",
+    "runtime-main.js.map": "/pay-form/static/js/runtime-main.1cff6829.js.map",
+    "static/js/2.68adde30.chunk.js": "/pay-form/static/js/2.68adde30.chunk.js",
+    "static/js/2.68adde30.chunk.js.map": "/pay-form/static/js/2.68adde30.chunk.js.map",
+    "index.html": "/pay-form/index.html",
+    "precache-manifest.4870c478388b034ed3907790de9b475a.js": "/pay-form/precache-manifest.4870c478388b034ed3907790de9b475a.js",
+    "service-worker.js": "/pay-form/service-worker.js",
+    "static/css/main.3a4bbd11.chunk.css.map": "/pay-form/static/css/main.3a4bbd11.chunk.css.map",
+    "static/js/2.68adde30.chunk.js.LICENSE.txt": "/pay-form/static/js/2.68adde30.chunk.js.LICENSE.txt",
+    "static/media/close.png": "/pay-form/static/media/close.5c9f5798.png",
+    "static/media/footerImage.png": "/pay-form/static/media/footerImage.93e4eddf.png",
+    "static/media/kastaPay.png": "/pay-form/static/media/kastaPay.eb852f81.png",
+    "static/media/logo.png": "/pay-form/static/media/logo.1539fc50.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1cff6829.js",
+    "static/js/2.68adde30.chunk.js",
+    "static/css/main.3a4bbd11.chunk.css",
+    "static/js/main.b266288b.chunk.js"
+  ]
+}
