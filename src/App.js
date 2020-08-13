@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
 
-  const [isShowModal, setIsShowModal] = useState(true);
+  const [isShowModal, setIsShowModal] = useState(false);
   const [isShowSuccess, setisShowSuccess] = useState(false);
   const sum = 123284;
 
